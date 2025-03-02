@@ -1,32 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Takoyaki Recipe</title>
-    <link rel="stylesheet" href="../../styles/recipe-page-styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
+    <link rel="stylesheet" href="../../styles/recipe-page-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet" />
+    <style>
+        .ingredient-list li {
+            transition: all 0.3s ease;
+        }
+        .ingredient-list input[type="checkbox"]:checked + label {
+            text-decoration: line-through;
+            color: #888;
+        }
+        .recipe-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        .banner-image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .social-share {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .social-link {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #4287f5;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+        .social-link:hover {
+            background-color: #2257ac;
+        }
+    </style>
+</head>
+<body>
     <div id="banner">
-      <h1 id="header">Group 20 Interactive Recipes</h1>
-      <div id="navigation-buttons">
-        <ul>
-          <li><a href="../index.html" class="nav-button-style">Home</a></li>
-          <li>
-            <a href="../recipes.html" class="nav-button-style">Recipes</a>
-          </li>
-        </ul>
-      </div>
+        <h1 id="header">Takoyaki Recipe</h1>
     </div>
-  </body>
+    <div id="navigation-buttons">
+        <ul>
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../recipes.html">Recipes</a></li>
+            <li><a href="../../intro.html">Intro</a></li>
+        </ul>
+    </div>
+
+    <div class="recipe-container">
+        <img src="../../assets/takoyaki.png" alt="Takoyaki Image" class="banner-image">
+        
+        <h2>Ingredients:</h2>
+        <ul class="ingredient-list">
+            <li>
+                <input type="checkbox" id="takoyaki-ingredient1">
+                <label for="takoyaki-ingredient1">250g plain flour</label>
+            </li>
+            <li>
+                <input type="checkbox" id="takoyaki-ingredient2">
+                <label for="takoyaki-ingredient2">1L dashi stock</label>
+            </li>
+            <li>
+                <input type="checkbox" id="takoyaki-ingredient3">
+                <label for="takoyaki-ingredient3">2 eggs, beaten</label>
+            </li>
+            <li>
+                <input type="checkbox" id="takoyaki-ingredient4">
+                <label for="takoyaki-ingredient4">800g octopus, diced into 1cm cubes</label>
+            </li>
+            <li>
+                <input type="checkbox" id="takoyaki-ingredient5">
+                <label for="takoyaki-ingredient5">½ cup finely sliced spring onions</label>
+            </li>
+            <li>
+                <input type="checkbox" id="takoyaki-ingredient6">
+                <label for="takoyaki-ingredient6">¼ cup benishoga (red-pickled ginger), finely chopped</label>
+            </li>
+            <li>
+                <input type="checkbox" id="takoyaki-ingredient7">
+                <label for="takoyaki-ingredient7">1 cup tenkasu (tempura batter bits)</label>
+            </li>
+            <li>
+                <input type="checkbox" id="takoyaki-ingredient8">
+                <label for="takoyaki-ingredient8">1 cup Takoyaki sauce</label>
+            </li>
+            <li>
+                <input type="checkbox" id="takoyaki-ingredient9">
+                <label for="takoyaki-ingredient9">1 cup Japanese mayonnaise</label>
+            </li>
+            <li>
+                <input type="checkbox" id="takoyaki-ingredient10">
+                <label for="takoyaki-ingredient10">Bonito flakes (katsuobushi)</label>
+            </li>
+            <li>
+                <input type="checkbox" id="takoyaki-ingredient11">
+                <label for="takoyaki-ingredient11">2 tbsp aonori (dried seaweed flakes)</label>
+            </li>
+            <li>
+                <input type="checkbox" id="takoyaki-ingredient12">
+                <label for="takoyaki-ingredient12">¼ cup oil, for greasing the pan</label>
+            </li>
+            <li>
+                <input type="checkbox" id="takoyaki-ingredient13">
+                <label for="takoyaki-ingredient13">½ tsp soy sauce</label>
+            </li>
+            <li>
+                <input type="checkbox" id="takoyaki-ingredient14">
+                <label for="takoyaki-ingredient14">¼ tsp salt</label>
+            </li>
+        </ul>
+
+        <h2>Instructions:</h2>
+        <ol>
+            <li>Prepare the batter: In a large bowl, mix flour, dashi stock, beaten eggs, soy sauce, and salt until smooth.</li>
+            <li>Heat the takoyaki pan over medium heat. Generously oil each mold and the surface of the pan.</li>
+            <li>Fill each mold with batter, slightly overflowing.</li>
+            <li>Add fillings: Place a piece of octopus, some green onion, pickled ginger, and tempura scraps into each mold.</li>
+            <li>Cook and rotate: As the takoyaki starts to cook, use a pick or skewer to rotate each ball. Cook until golden brown and crispy on the outside.</li>
+            <li>Serve: Transfer the takoyaki to a plate and drizzle with takoyaki sauce and Japanese mayonnaise. Sprinkle with bonito flakes and aonori.</li>
+            <li>Enjoy! Serve immediately and enjoy your homemade takoyaki.</li>
+        </ol>
+
+        <h2>Tips & Variations:</h2>
+        <ul>
+            <li>Use a variety of fillings like shrimp or scallops for different flavors.</li>
+            <li>Experiment with different sauces, such as sriracha mayonnaise or ponzu.</li>
+            <li>For an extra crispy exterior, add a small amount of cornstarch to the batter.</li>
+        </ul>
+
+        <div class="social-share">
+            <h3>Share Your Takoyaki Creation!</h3>
+            <a href="#" class="social-link">Facebook</a>
+            <a href="#" class="social-link">Twitter</a>
+            <a href="#" class="social-link">Instagram</a>
+        </div>
+    </div>
+</body>
 </html>
+
