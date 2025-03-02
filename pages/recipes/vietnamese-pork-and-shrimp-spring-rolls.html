@@ -9,12 +9,99 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap"
       rel="stylesheet"
     />
+    <style>
+      .recipe-container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
+      .recipe-image {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        transition: transform 0.3s ease;
+      }
+      .recipe-image:hover {
+        transform: scale(1.02);
+      }
+      .ingredient-list {
+        list-style-type: none;
+        padding: 0;
+      }
+      .ingredient-list li {
+        margin-bottom: 10px;
+        transition: all 0.3s ease;
+      }
+      .ingredient-list input[type="checkbox"] {
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        border: 2px solid #4CAF50;
+        border-radius: 4px;
+        outline: none;
+        cursor: pointer;
+        vertical-align: middle;
+        margin-right: 10px;
+        transition: all 0.3s ease;
+      }
+      .ingredient-list input[type="checkbox"]:checked {
+        background-color: #4CAF50;
+        position: relative;
+      }
+      .ingredient-list input[type="checkbox"]:checked::before {
+        content: "\2714";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 14px;
+      }
+      .ingredient-list label {
+        cursor: pointer;
+        vertical-align: middle;
+        transition: all 0.3s ease;
+      }
+      .ingredient-list input[type="checkbox"]:checked + label {
+        text-decoration: line-through;
+        color: #888;
+      }
+      .instructions {
+        background-color: #e8f5e9;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 20px;
+      }
+      .instructions li {
+        margin-bottom: 15px;
+      }
+      .peanut-sauce {
+        background-color: #fff3e0;
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 20px;
+      }
+      .peanut-sauce h3 {
+        color: #e65100;
+      }
+      .tips {
+        background-color: #e3f2fd;
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 20px;
+      }
+      .tips h3 {
+        color: #1565c0;
+      }
+    </style>
   </head>
   <body>
     <div id="banner">
@@ -25,6 +112,70 @@
           <li>
             <a href="../recipes.html" class="nav-button-style">Recipes</a>
           </li>
+        </ul>
+      </div>
+    </div>
+    <div class="recipe-container">
+      <h2>Vietnamese Pork and Shrimp Spring Rolls (Gỏi Cuốn)</h2>
+      <img src="../../assets/vietnamese-porkandshrimp-spring-rolls.jpg" alt="Vietnamese Pork and Shrimp Spring Rolls" class="recipe-image">
+      <h3>Ingredients:</h3>
+      <ul class="ingredient-list">
+        <li>
+          <input type="checkbox" id="ingredient1">
+          <label for="ingredient1">1 pack rice vermicelli</label>
+        </li>
+        <li>
+          <input type="checkbox" id="ingredient2">
+          <label for="ingredient2">1 lb pork belly</label>
+        </li>
+        <li>
+          <input type="checkbox" id="ingredient3">
+          <label for="ingredient3">1 lb shrimp, peeled and deveined</label>
+        </li>
+        <li>
+          <input type="checkbox" id="ingredient4">
+          <label for="ingredient4">1 head lettuce (green, red leaf, or romaine)</label>
+        </li>
+        <li>
+          <input type="checkbox" id="ingredient5">
+          <label for="ingredient5">Assorted herbs (Thai basil, mint, cilantro)</label>
+        </li>
+        <li>
+          <input type="checkbox" id="ingredient6">
+          <label for="ingredient6">Rice paper wrappers</label>
+        </li>
+      </ul>
+      <div class="instructions">
+        <h3>Instructions:</h3>
+        <ol>
+          <li>Cook rice vermicelli according to package instructions. Drain, rinse, and set aside.</li>
+          <li>Boil pork belly for about 20 minutes until cooked through. Cool and slice thinly.</li>
+          <li>Cook shrimp until pink and opaque. Cool, peel, and slice in half lengthwise.</li>
+          <li>Wash and dry all herbs and vegetables.</li>
+          <li>Dip a rice paper wrapper in warm water briefly, then lay on a damp work surface.</li>
+          <li>Layer shrimp, pork, herbs, noodles, and lettuce on the wrapper.</li>
+          <li>Roll tightly, folding in the sides as you go.</li>
+          <li>Repeat with remaining ingredients.</li>
+        </ol>
+      </div>
+      <div class="peanut-sauce">
+        <h3>Peanut Dipping Sauce:</h3>
+        <ul>
+          <li>1/2 cup hoisin sauce</li>
+          <li>1/4 cup peanut butter</li>
+          <li>1/4 cup water</li>
+          <li>2 tbsp minced garlic</li>
+          <li>1 tbsp sugar</li>
+          <li>1 tbsp lime juice</li>
+        </ul>
+        <p>Mix all ingredients in a saucepan over medium heat until smooth and warm.</p>
+      </div>
+      <div class="tips">
+        <h3>Chef's Tips:</h3>
+        <ul>
+          <li>For best results, use fresh ingredients and serve immediately.</li>
+          <li>Don't overstuff the rolls to ensure easy rolling and eating.</li>
+          <li>Experiment with different herbs and vegetables for variety.</li>
         </ul>
       </div>
     </div>
