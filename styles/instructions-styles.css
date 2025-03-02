@@ -1,0 +1,188 @@
+#recipe-container {
+    padding: 20px;
+    position: relative;
+  }
+  
+  #instructions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .step {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+  }
+  
+  .step input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .step h3 {
+    margin-top: 0;
+  }
+  
+  .step p {
+    margin-bottom: 0;
+  }
+  
+  #recipe-image {
+    position: absolute;
+    bottom: -220px;
+    right: 20px;
+    width: 750px; /* Adjust the width to make the image smaller */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #recipe-imagechicken65 {
+    position: absolute;
+    bottom: -380px;
+    right: 20px;
+    width: 750px; /* Adjust the width to make the image smaller */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #recipe-imagechocolatechipcookies {
+    position: absolute;
+    bottom: -125px;
+    right: 20px;
+    width: 550px; /* Adjust the width to make the image smaller */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #recipe-imagemacandcheese {
+    position: absolute;
+    bottom: -300px;
+    right: 20px;
+    width: 500px; /* Adjust the width to make the image smaller */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #recipe-imagemargheritapizza {
+    position: absolute;
+    bottom: -110px;
+    right: 20px;
+    width: 370px; /* Adjust the width to make the image smaller */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #recipe-imagespaghetti {
+    position: absolute;
+    bottom: -100px;
+    right: 20px;
+    width: 370px; /* Adjust the width to make the image smaller */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #recipe-imagesteaktacos {
+    position: absolute;
+    bottom: -300px;
+    right: 20px;
+    width: 370px; /* Adjust the width to make the image smaller */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  #recipe-imagetakoyaki {
+    position: absolute;
+    bottom: -150px;
+    right: 20px;
+    width: 750px; /* Adjust the width to make the image smaller */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  #recipe-imagethaitea {
+    position: absolute;
+    bottom: -100px;
+    right: 20px;
+    width: 500px; /* Adjust the width to make the image smaller */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #recipe-imagetonkatsu {
+    position: absolute;
+    bottom: -200px;
+    right: 20px;
+    width: 400px; /* Adjust the width to make the image smaller */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #recipe-imageavocado {
+    position: absolute;
+    bottom: -200px;
+    right: 20px;
+    width: 400px; /* Adjust the width to make the image smaller */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #recipe-imagespringrolls {
+    position: absolute;
+    bottom: -150px;
+    right: 0px;
+    width: 375px; /* Adjust the width to make the image smaller */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #nutrition-info-box {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: transparent; /* Make the background transparent */
+    border: none; /* Remove the border */
+    box-shadow: none; /* Remove the box shadow */
+  }
+  
+  .nutrition-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .nutrition-item span {
+    width: 100px; /* Adjust the width to make the label smaller */
+    margin-right: 10px; /* Add some space between the label and the bar */
+  }
+  
+  .progress-bar {
+    width: 750px; /* Set the width of the bar */
+    background-color: #161515;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0; /* Remove the margin to eliminate the gap */
+  }
+  
+  .progress {
+    height: 10px;
+    background-color: #4caf50;
+  }
