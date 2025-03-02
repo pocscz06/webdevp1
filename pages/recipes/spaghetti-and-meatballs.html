@@ -15,6 +15,91 @@
       href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap"
       rel="stylesheet"
     />
+    <style>
+      .recipe-container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
+      .recipe-image {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+      .ingredient-list {
+        list-style-type: none;
+        padding: 0;
+      }
+      .ingredient-list li {
+        margin-bottom: 10px;
+        transition: all 0.3s ease;
+      }
+      .ingredient-list input[type="checkbox"] {
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        border: 2px solid #4287f5;
+        border-radius: 4px;
+        outline: none;
+        cursor: pointer;
+        vertical-align: middle;
+        margin-right: 10px;
+        transition: all 0.3s ease;
+      }
+      .ingredient-list input[type="checkbox"]:checked {
+        background-color: #4287f5;
+        position: relative;
+      }
+      .ingredient-list input[type="checkbox"]:checked::before {
+        content: "\2714";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 14px;
+      }
+      .ingredient-list label {
+        cursor: pointer;
+        vertical-align: middle;
+        transition: all 0.3s ease;
+      }
+      .ingredient-list input[type="checkbox"]:checked + label {
+        text-decoration: line-through;
+        color: #888;
+      }
+      .instructions {
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 20px;
+      }
+      .instructions li {
+        margin-bottom: 15px;
+      }
+      .nutrition-info {
+        background-color: #e9ecef;
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 20px;
+      }
+      .nutrition-info h3 {
+        margin-top: 0;
+      }
+      .tips {
+        background-color: #d1ecf1;
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 20px;
+      }
+      .tips h3 {
+        color: #0c5460;
+      }
+    </style>
   </head>
   <body>
     <div id="banner">
@@ -25,6 +110,82 @@
           <li>
             <a href="../recipes.html" class="nav-button-style">Recipes</a>
           </li>
+        </ul>
+      </div>
+    </div>
+    <div class="recipe-container">
+      <h2>Spaghetti and Meatballs</h2>
+      <img src="../../assets/spaghetti-n-meatballs.png" alt="Spaghetti and Meatballs" class="recipe-image">
+      <h3>Ingredients:</h3>
+      <ul class="ingredient-list">
+        <li>
+          <input type="checkbox" id="ingredient1">
+          <label for="ingredient1">1 pound spaghetti</label>
+        </li>
+        <li>
+          <input type="checkbox" id="ingredient2">
+          <label for="ingredient2">1 pound ground beef</label>
+        </li>
+        <li>
+          <input type="checkbox" id="ingredient3">
+          <label for="ingredient3">1 large egg</label>
+        </li>
+        <li>
+          <input type="checkbox" id="ingredient4">
+          <label for="ingredient4">1/4 cup breadcrumbs</label>
+        </li>
+        <li>
+          <input type="checkbox" id="ingredient5">
+          <label for="ingredient5">1/4 cup grated Parmesan cheese</label>
+        </li>
+        <li>
+          <input type="checkbox" id="ingredient6">
+          <label for="ingredient6">3 garlic cloves, minced</label>
+        </li>
+        <li>
+          <input type="checkbox" id="ingredient7">
+          <label for="ingredient7">2 tablespoons chopped parsley</label>
+        </li>
+        <li>
+          <input type="checkbox" id="ingredient8">
+          <label for="ingredient8">1 teaspoon salt</label>
+        </li>
+        <li>
+          <input type="checkbox" id="ingredient9">
+          <label for="ingredient9">1/2 teaspoon black pepper</label>
+        </li>
+        <li>
+          <input type="checkbox" id="ingredient10">
+          <label for="ingredient10">1 tablespoon olive oil</label>
+        </li>
+        <li>
+          <input type="checkbox" id="ingredient11">
+          <label for="ingredient11">1 (25-ounce) jar marinara sauce</label>
+        </li>
+      </ul>
+      <div class="instructions">
+        <h3>Instructions:</h3>
+        <ol>
+          <li>In a large bowl, combine ground beef, egg, breadcrumbs, Parmesan cheese, minced garlic, chopped parsley, salt, and pepper. Mix well.</li>
+          <li>Form the mixture into golf ball-sized meatballs.</li>
+          <li>Heat olive oil in a large skillet over medium heat. Cook the meatballs until browned on all sides, about 8-10 minutes.</li>
+          <li>Add marinara sauce to the skillet with the meatballs. Simmer for 10-15 minutes until meatballs are cooked through.</li>
+          <li>Meanwhile, cook spaghetti in a large pot of salted boiling water according to package instructions until al dente.</li>
+          <li>Drain the spaghetti and return it to the pot.</li>
+          <li>Add the meatballs and sauce to the spaghetti. Toss gently to combine.</li>
+          <li>Serve hot, garnished with additional Parmesan cheese and chopped parsley if desired.</li>
+        </ol>
+      </div>
+      <div class="nutrition-info">
+        <h3>Nutrition Information (per serving):</h3>
+        <p>Calories: 650 | Protein: 35g | Carbohydrates: 80g | Fat: 25g | Fiber: 5g</p>
+      </div>
+      <div class="tips">
+        <h3>Chef's Tips:</h3>
+        <ul>
+          <li>For juicier meatballs, use a mixture of ground beef and ground pork.</li>
+          <li>Don't overmix the meatball mixture to keep them tender.</li>
+          <li>For a healthier option, try whole wheat spaghetti or zucchini noodles.</li>
         </ul>
       </div>
     </div>
