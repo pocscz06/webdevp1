@@ -3,19 +3,106 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vietnamese Avocado Smoothie</title>
+    <title>Vietnamese Avocado Smoothie (Sinh To Bo)</title>
     <link rel="stylesheet" href="../../styles/recipe-page-styles.css" />
     <link rel="stylesheet" href="../../styles/instructions-styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap"
       rel="stylesheet"
     />
+    <style>
+      .recipe-container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #f0f8ea;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+      }
+      .recipe-image {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        transition: transform 0.3s ease;
+      }
+      .recipe-image:hover {
+        transform: scale(1.02);
+      }
+      .ingredient-list {
+        list-style-type: none;
+        padding: 0;
+      }
+      .ingredient-list li {
+        margin-bottom: 10px;
+        transition: all 0.3s ease;
+      }
+      .ingredient-list input[type="checkbox"] {
+        appearance: none;
+        width: 20px;
+        height: 20px;
+        border: 2px solid #4CAF50;
+        border-radius: 4px;
+        outline: none;
+        cursor: pointer;
+        vertical-align: middle;
+        margin-right: 10px;
+        transition: all 0.3s ease;
+      }
+      .ingredient-list input[type="checkbox"]:checked {
+        background-color: #4CAF50;
+        position: relative;
+      }
+      .ingredient-list input[type="checkbox"]:checked::before {
+        content: "\2714";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 14px;
+      }
+      .ingredient-list label {
+        cursor: pointer;
+        vertical-align: middle;
+        transition: all 0.3s ease;
+      }
+      .ingredient-list input[type="checkbox"]:checked + label {
+        text-decoration: line-through;
+        color: #888;
+      }
+      .instructions {
+        background-color: #e8f5e9;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 20px;
+      }
+      .instructions li {
+        margin-bottom: 15px;
+      }
+      .tips {
+        background-color: #e0f2f1;
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 20px;
+      }
+      .tips h3 {
+        color: #00796b;
+      }
+      .nutrition-info {
+        background-color: #f1f8e9;
+        padding: 15px;
+        border-radius: 10px;
+        margin-top: 20px;
+      }
+      .nutrition-info h3 {
+        color: #558b2f;
+      }
+    </style>
   </head>
   <body>
     <div id="banner">
@@ -29,6 +116,7 @@
         </ul>
       </div>
     </div>
+<<<<<<< HEAD
     <div id="recipe-container">
       <h2>Vietnamese Avocado Smoothie</h2>
       <div id="instructions">
@@ -110,3 +198,55 @@
     </div>
   </body>
 </html>
+=======
+    <div class="recipe-container">
+      <h2>Vietnamese Avocado Smoothie (Sinh To Bo)</h2>
+      <img src="../../assets/vietnamese-avocado-smoothie.png" alt="Vietnamese Avocado Smoothie" class="recipe-image">
+      <h3>Ingredients:</h3>
+      <ul class="ingredient-list">
+        <li>
+          <input type="checkbox" id="ingredient1">
+          <label for="ingredient1">2 ripe avocados</label>
+        </li>
+        <li>
+          <input type="checkbox" id="ingredient2">
+          <label for="ingredient2">1 cup milk</label>
+        </li>
+        <li>
+          <input type="checkbox" id="ingredient3">
+          <label for="ingredient3">2-3 tablespoons condensed milk (adjust to taste)</label>
+        </li>
+        <li>
+          <input type="checkbox" id="ingredient4">
+          <label for="ingredient4">1 cup ice cubes</label>
+        </li>
+      </ul>
+      <div class="instructions">
+        <h3>Instructions:</h3>
+        <ol>
+          <li>Cut the avocados in half, remove the pit, and scoop out the flesh.</li>
+          <li>In a blender, combine the avocado flesh, milk, condensed milk, and ice cubes.</li>
+          <li>Blend until smooth and creamy, about 30-60 seconds.</li>
+          <li>Taste and adjust sweetness by adding more condensed milk if desired.</li>
+          <li>Pour into glasses and serve immediately.</li>
+          <li>Optionally, garnish with a sprinkle of cocoa powder or a drizzle of condensed milk.</li>
+        </ol>
+      </div>
+      <div class="tips">
+        <h3>Chef's Tips:</h3>
+        <ul>
+          <li>For the best flavor, use ripe Hass avocados.</li>
+          <li>For a dairy-free version, use coconut milk instead of regular milk.</li>
+          <li>To make it extra creamy, freeze the avocado chunks for an hour before blending.</li>
+          <li>For a thicker smoothie, use less milk or add more ice.</li>
+        </ul>
+      </div>
+      <div class="nutrition-info">
+        <h3>Nutrition Information (per serving):</h3>
+        <p>Calories: 350 | Protein: 5g | Carbohydrates: 25g | Fat: 28g | Fiber: 9g</p>
+      </div>
+    </div>
+  </body>
+</html>
+
+>>>>>>> d12a782cf5bb0f70749e5edb8d2263661711756b
