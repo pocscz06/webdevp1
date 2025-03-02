@@ -31,6 +31,10 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+#navigation-buttons a.active {
+  background-color: #2257ac;
+}
+
 #navigation-buttons a:hover {
   background-color: #2257ac;
 }

@@ -12,6 +12,10 @@
   gap: 10px;
 }
 
+#navigation-buttons a.active {
+  background-color: #2257ac;
+}
+
 #navigation-buttons a {
   display: block;
   text-decoration: none;
@@ -105,6 +109,52 @@ body {
   user-select: none;
 }
 
+.filter-section {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+.filter-form {
+  max-width: 800px;
+  margin: 30px auto 0;
+  text-align: center;
+}
+
+.filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+  user-select: none;
+}
+
+.filter-options input[type="radio"] {
+  display: none;
+}
+
+.filter-options label {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #f8f9fa;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.filter-options label:hover {
+  background-color: #e9ecef;
+}
+
+.filter-options input[type="radio"]:checked + label {
+  background-color: #4287f5;
+  color: white;
+}
+
 .recipe-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, 280px);
@@ -125,6 +175,35 @@ body {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   user-select: none;
+}
+
+.recipe-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.recipe-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 280px);
+  gap: 30px;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 0 20px;
+  position: relative;
+}
+
+.recipe-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.4s ease;
+  user-select: none;
+  position: relative;
 }
 
 .recipe-card:hover {

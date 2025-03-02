@@ -22,61 +22,107 @@
       <div id="navigation-buttons">
         <ul>
           <li><a href="index.html" class="nav-button-style">Home</a></li>
-          <li><a href="recipes.html" class="nav-button-style">Recipes</a></li>
+          <li><a class="active" href="recipes.html" class="nav-button-style">Recipes</a></li>
         </ul>
       </div>
     </div>
 
+
     <div class="search-container">
-      <input class="search-bar" type="text" placeholder="Find a recipe"
+      <input class="search-bar" type="text" placeholder="Find a recipe (NO IMPLEMENTATION)"
       <button class="search-button" type="submit">
         <i class="fa-solid fa-magnifying-glass-plus"></i>
       </button>
     </div>
 
+  <div class="filter-form">
+    <div class="filter-section">
+      <h3>Cuisine Type:</h3>
+      <div class="filter-options cuisine-filters">
+        <input type="radio" id="cuisine-all" name="cuisine" value="all" checked>
+        <label for="cuisine-all">All</label>
+        
+        <input type="radio" id="cuisine-japanese" name="cuisine" value="japanese">
+        <label for="cuisine-japanese">Japanese</label>
+        
+        <input type="radio" id="cuisine-american" name="cuisine" value="american">
+        <label for="cuisine-american">American</label>
+
+        <input type="radio" id="cuisine-italian" name="cuisine" value="italian">
+        <label for="cuisine-italian">Italian</label>
+
+        <input type="radio" id="cuisine-mexican" name="cuisine" value="mexican">
+        <label for="cuisine-mexican">Mexican</label>
+
+        <input type="radio" id="cuisine-thai" name="cuisine" value="thai">
+        <label for="cuisine-thai">Thai</label>
+
+        <input type="radio" id="cuisine-vietnamese" name="cuisine" value="vietnamese">
+        <label for="cuisine-vietnamese">Vietnamese</label>
+
+        <input type="radio" id="cuisine-indian" name="cuisine" value="indian">
+        <label for="cuisine-indian">Indian</label>
+      </div>
+    </div>
+
+    <div class="filter-section">
+      <h3>Dietary Restrictions:</h3>
+      <div class="filter-options diet-filters">
+        <input type="radio" id="diet-all" name="diet" value="all" checked>
+        <label for="diet-all">All</label>
+        
+        <input type="radio" id="diet-vegan" name="diet" value="vegan">
+        <label for="diet-vegan">Vegan</label>
+
+        <input type="radio" id="diet-beverages" name="diet" value="beverages">
+        <label for="diet-beverages">Beverage</label>
+      </div>
+    </div>
+</div>
+
 
     <div class="recipe-grid">
 
       <div class="recipe-card">
-        <h2 class="recipe-title">Takoyaki</h2>
-        <a href="recipes/takoyaki.html">
-          <img
-            src="../assets/takoyaki.png"
-            alt="An image of Takoyaki, a popular Japanese fried street snack"
-          />
-        </a>
-        <p class="recipe-description">
-          Hot fried balls of batter filled with green onions, ginger, tempura bits, and octopus, topped with mayonnaise and bonito flakes.
-        </p>
+          <h2 class="recipe-title">Takoyaki</h2>
+          <a href="recipes/takoyaki.html">
+            <img
+              src="../assets/takoyaki.png"
+              alt="An image of Takoyaki, a popular Japanese fried street snack"
+            />
+          </a>
+          <p class="recipe-description">
+            Hot fried balls of batter filled with green onions, ginger, tempura bits, and octopus, topped with mayonnaise and bonito flakes.
+          </p>
       </div>
 
       <div class="recipe-card">
-        <h2 class="recipe-title">Steak Tacos</h2>
-        <a href="recipes/steak-tacos.html">
-          <img
-            src="../assets/steak-tacos.jpg"
-            alt="An image of steak tacos"
-          />
-        </a>
-        <p class="recipe-description">
-          Authentic steak tacos topped with cilanto and onions.
-        </p>
+          <h2 class="recipe-title">Steak Tacos</h2>
+          <a href="recipes/steak-tacos.html">
+            <img
+              src="../assets/steak-tacos.jpg"
+              alt="An image of steak tacos"
+            />
+          </a>
+          <p class="recipe-description">
+            Authentic steak tacos topped with cilanto and onions.
+          </p>
       </div>
 
       <div class="recipe-card">
-        <h2 class="recipe-title">Chocolate Chip Cookies</h2>
-        <a href="recipes/chocolate-chip-cookies.html">
-          <img
-            src="../assets/chocolate-chip-cookies.jpg"
-            alt="An image of chocolate chip cookies"
-          />
-        </a>
-        <p class="recipe-description">
-          Classic chocolate chip cookies, from scratch.
-        </p>
+          <h2 class="recipe-title">Chocolate Chip Cookies</h2>
+          <a href="recipes/chocolate-chip-cookies.html">
+            <img
+              src="../assets/chocolate-chip-cookies.jpg"
+              alt="An image of chocolate chip cookies"
+            />
+          </a>
+          <p class="recipe-description">
+            Classic chocolate chip cookies, from scratch.
+          </p>
       </div>
 
-<div class="recipe-card">
+      <div class="recipe-card">
         <h2 class="recipe-title">Chicken Tikka Masala</h2>
         <a href="recipes/chicken-tikka-masala.html">
           <img
@@ -142,15 +188,15 @@
       </div>
 
       <div class="recipe-card">
-        <h2 class="recipe-title">Tonkatsu (Japanese Fried Pork Cutlet)</h2>
-        <a href="recipes/tonkatsu.html">
+        <h2 class="recipe-title">Macaroni and Cheese</h2>
+        <a href="recipes/mac-and-cheese.html">
           <img
-            src="../assets/donkatsu.jpg"
-            alt="An image of Tonkatsu, a Japanese fried pork cutlet dish"
+            src="../assets/mac-and-cheese.png"
+            alt="An image of Macaroni and Cheese"
           />
         </a>
         <p class="recipe-description">
-          A Japanese comfort food, tonkatsu is a tender pork loin deep-fried in Japanese breadcrumbs.
+          A classic American comfort food.
         </p>
       </div>
 
