@@ -72,3 +72,9 @@ body {
   font-variation-settings: "slnt" 0;
   background-color: rgba(171, 207, 239, 0.252);
 }
+
+.highlight:hover {
+  text-decoration: underline;
+  font-weight: bolder;
+  color: red;
+}
